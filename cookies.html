@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cookie Policy - AutoCore Parts</title>
+  <style>
+    body { margin: 0; font-family: Arial; background: #f8f9fa; color: #333; }
+    header { background: #0d6efd; color: white; padding: 2rem; text-align: center; }
+    nav { background: #e9ecef; padding: 1rem; text-align: center; }
+    nav a { margin: 0 15px; color: #0d6efd; text-decoration: none; }
+    section { max-width: 1000px; margin: auto; padding: 2rem; }
+    footer { background: #212529; color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+    footer a { color: #adb5bd; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cookie Policy</h1>
+  <p>Understanding how we use cookies</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="cookies.html">Cookies</a>
+  <a href="terms.html">Terms</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <p>
+    At AutoCore Parts, we use cookies to enhance your experience on our website. Cookies are small text files stored on your device that help us remember your preferences, understand how you interact with our site, and provide you with a smoother, more personalized shopping experience.
+  </p>
+
+  <h3>What Are Cookies?</h3>
+  <p>
+    Cookies are widely used across the internet to make websites work efficiently and provide valuable information to site owners. They can store information like your login status, items in your shopping cart, and language preferences. Cookies are safe and cannot access personal data stored on your device.
+  </p>
+
+  <h3>Types of Cookies We Use</h3>
+  <ul>
+    <li><strong>Essential Cookies:</strong> These cookies are necessary for the website to function properly. For example, they enable you to add items to your cart and complete a purchase.</li>
+    <li><strong>Performance and Analytics Cookies:</strong> These cookies collect information about how visitors use the site, such as which pages are visited most often and if users encounter errors. This data helps us improve the website's performance.</li>
+    <li><strong>Functional Cookies:</strong> Functional cookies remember your preferences, such as language settings and location, to provide a more personalized experience.</li>
+    <li><strong>Marketing and Advertising Cookies:</strong> These cookies track your browsing habits to deliver relevant advertisements and offers tailored to your interests.</li>
+  </ul>
+
+  <h3>How We Use Cookies</h3>
+  <p>
+    We use cookies to:
+  </p>
+  <ul>
+    <li>Maintain your login session and security.</li>
+    <li>Remember your shopping cart contents.</li>
+    <li>Analyze site usage to improve our offerings.</li>
+    <li>Personalize marketing messages and advertisements.</li>
+  </ul>
+
+  <h3>Your Choices Regarding Cookies</h3>
+  <p>
+    Most web browsers automatically accept cookies, but you can modify your browser settings to decline cookies if you prefer. However, disabling cookies may affect the functionality of our website, including the ability to make purchases or access certain features.
+  </p>
+  <p>
+    To manage or delete cookies, you can adjust your browser settings or use tools provided by your device. For more detailed instructions, please refer to your browser’s help section or visit websites like <a href="https://www.aboutcookies.org/" target="_blank" rel="noopener noreferrer">aboutcookies.org</a>.
+  </p>
+
+  <h3>Third-Party Cookies</h3>
+  <p>
+    We may also allow third-party service providers, such as analytics and advertising companies, to place cookies on your device to better understand your preferences and improve our marketing efforts. These providers have their own privacy policies and cookie management practices, which we recommend you review.
+  </p>
+
+  <h3>Changes to Our Cookie Policy</h3>
+  <p>
+    We may update this Cookie Policy from time to time to reflect changes in our practices or applicable laws. We encourage you to review this page periodically to stay informed about how we use cookies.
+  </p>
+
+  <h3>Contact Us</h3>
+  <p>
+    If you have any questions or concerns about our Cookie Policy, please <a href="contact.html">contact us</a>. We’re here to help!
+  </p>
+</section>
+
+<footer>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="cookies.html">Cookies</a> |
+    <a href="terms.html">Terms</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+  <p>&copy; 2025 AutoCore Parts. All Rights Reserved.</p>
+</footer>
+<div id="cookie-consent" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #343a40;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-size: 0.9rem;
+">
+  <span>
+    This website uses cookies to ensure you get the best experience. See our <a href="cookies.html" style="color: #ffc107; text-decoration: underline;">Cookies Policy</a>.
+  </span>
+  <div>
+    <button onclick="acceptCookies()" style="margin-right: 10px; background-color: #28a745; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer;">Accept</button>
+    <button onclick="declineCookies()" style="background-color: #dc3545; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer;">Decline</button>
+  </div>
+</div>
+
+<script>
+  const cookieBanner = document.getElementById('cookie-consent');
+
+  if (localStorage.getItem('cookiesAccepted') === 'yes' || localStorage.getItem('cookiesAccepted') === 'no') {
+    cookieBanner.style.display = 'none';
+  }
+
+  function acceptCookies() {
+    localStorage.setItem('cookiesAccepted', 'yes');
+    cookieBanner.style.display = 'none';
+  }
+
+  function declineCookies() {
+    localStorage.setItem('cookiesAccepted', 'no');
+    cookieBanner.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AutoCore Parts - Quality Auto Parts for Every Vehicle</title>
+ <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: #00bcd4;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+
+  nav a {
+    margin: 0 15px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    color: #00bcd4;
+    text-decoration: underline;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  h2, h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 0.3rem;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 48%;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .product-card h4 {
+    margin: 0.5rem 0;
+    color: #2c3e50;
+  }
+
+  .price {
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  blockquote {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-left: 5px solid #00bcd4;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #2c3e50;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  footer a {
+    color: #00bcd4;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+  .horizontal-gallery {
+  margin: 2rem 0;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.image-item {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.image-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>AutoCore Parts</h1>
+  <p>Your trusted source for quality auto parts and accessories</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="cookies.html">Cookies</a>
+  <a href="terms.html">Terms</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <section>
+    <h2>Welcome to AutoCore Parts</h2>
+    <p>
+      At AutoCore Parts, we specialize in delivering top-quality automotive components designed to keep your vehicle running smoothly and safely. Whether you're a professional mechanic or a DIY enthusiast, our extensive inventory covers everything from essential engine parts to stylish accessories.
+    </p>
+    <p>
+      We understand how important reliable car parts are. That's why we partner only with trusted manufacturers and suppliers who meet the highest industry standards. Our mission is to provide you with durable, affordable parts that you can count on.
+    </p>
+  </section>
+
+  <section>
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="pads.png" alt="Brake Pads" />
+        <h4>Premium Brake Pads</h4>
+        <p>Ensure your vehicle stops safely with our high-performance brake pads engineered for durability and quiet operation.</p>
+        <p class="price">$59.99</p>
+      </div>
+      <div class="product-card">
+        <img src="air.png" alt="Air Filter" />
+        <h4>High-Flow Air Filter</h4>
+        <p>Improve engine performance and fuel efficiency with our washable, reusable air filters designed to trap dust and debris effectively.</p>
+        <p class="price">$34.50</p>
+      </div>
+      <div class="product-card">
+        <img src="plugs.png" alt="Spark Plugs" />
+        <h4>Platinum Spark Plugs</h4>
+        <p>Boost ignition reliability and engine efficiency with our long-lasting platinum spark plugs, compatible with most vehicle models.</p>
+        <p class="price">$12.75 each</p>
+      </div>
+      <div class="product-card">
+        <img src="batt.png" alt="Car Battery" />
+        <h4>Heavy-Duty Car Battery</h4>
+        <p>Reliable starting power and extended life with our maintenance-free, heavy-duty car batteries built for all weather conditions.</p>
+        <p class="price">$129.99</p>
+      </div>
+      <!-- New products added below -->
+      <div class="product-card">
+        <img src="oil.png" alt="Oil Filter" />
+        <h4>Durable Oil Filter</h4>
+        <p>Protect your engine with our high-quality oil filters designed to trap harmful contaminants and extend engine life.</p>
+        <p class="price">$18.99</p>
+      </div>
+      <div class="product-card">
+        <img src="led.png" alt="Headlight Bulbs" />
+        <h4>LED Headlight Bulbs</h4>
+        <p>Brighten your night driving with energy-efficient LED headlight bulbs offering longer lifespan and superior visibility.</p>
+        <p class="price">$49.95 (pair)</p>
+      </div>
+      <div class="product-card">
+        <img src="mats.png" alt="Car Mats" />
+        <h4>All-Weather Car Mats</h4>
+        <p>Protect your vehicle’s interior with our durable, easy-to-clean all-weather car mats designed to fit most cars.</p>
+        <p class="price">$69.00 (set)</p>
+      </div>
+      <div class="product-card">
+        <img src="wipers.png" alt="Windshield Wipers" />
+        <h4>Premium Windshield Wipers</h4>
+        <p>Keep your windshield clear in all weather conditions with our high-quality wipers for smooth, streak-free performance.</p>
+        <p class="price">$24.99 (pair)</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Choose AutoCore Parts?</h2>
+    <p>
+      When it comes to your vehicle, quality matters. Here are some reasons why AutoCore Parts stands out:
+    </p>
+    <ul>
+      <li><strong>Wide Selection:</strong> From brakes and filters to batteries and accessories, we offer a broad range of parts for various makes and models.</li>
+      <li><strong>Expert Support:</strong> Our knowledgeable customer service team is here to help you find the right part for your vehicle and answer any questions.</li>
+      <li><strong>Competitive Pricing:</strong> We work hard to keep prices affordable without compromising on quality.</li>
+      <li><strong>Fast Shipping:</strong> Get your parts quickly with our reliable shipping partners and track your orders in real time.</li>
+      <li><strong>Easy Returns:</strong> If you’re not satisfied, our hassle-free return policy makes it simple to get a refund or exchange.</li>
+    </ul>
+  </section>
+  <section class="horizontal-gallery">
+  <h2>Our Featured Parts</h2>
+  <div class="image-row">
+    <div class="image-item">
+      <img src="pads.png" alt="Brake Pads">
+      <p>Brake Pads – $45.00</p>
+    </div>
+    <div class="image-item">
+      <img src="air.png" alt="Air Filter">
+      <p>Air Filter – $25.00</p>
+    </div>
+    <div class="image-item">
+      <img src="plugs.png" alt="Spark Plug">
+      <p>Spark Plug – $15.00</p>
+    </div>
+    <div class="image-item">
+      <img src="oil.png" alt="Engine Oil">
+      <p>Engine Oil – $30.00</p>
+    </div>
+  </div>
+  </section>
+
+  <section>
+    <h2>Customer Satisfaction</h2>
+    <p>
+      We believe in building lasting relationships with our customers by providing exceptional products and service. Here’s what some of our customers say:
+    </p>
+    <blockquote>
+      “AutoCore Parts saved me time and money with their quick delivery and excellent quality. Highly recommend for all your car maintenance needs!” – <em>John D.</em>
+    </blockquote>
+    <blockquote>
+      “Great customer service! They helped me find the exact brake pads I needed and shipped them fast. I’ll definitely shop here again.” – <em>Sarah M.</em>
+    </blockquote>
+    <blockquote>
+      “The all-weather mats I bought fit perfectly and are very durable. Shipping was fast and the prices were very reasonable.” – <em>Alex P.</em>
+    </blockquote>
+    <blockquote>
+      “I had a great experience with AutoCore Parts. Their support team was friendly and knowledgeable, guiding me to the right spark plugs for my car.” – <em>Maria L.</em>
+    </blockquote>
+    <blockquote>
+      “Excellent product range and very competitive prices. The LED headlight bulbs I purchased have made a huge difference in night driving safety.” – <em>James K.</em>
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Stay Connected</h2>
+    <p>
+      Sign up for our newsletter to receive the latest updates, promotions, and tips on vehicle maintenance and care. Follow us on social media for exclusive offers and expert advice.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="cookies.html">Cookies</a> |
+    <a href="terms.html">Terms</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+  <p>&copy; 2025 AutoCore Parts. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
